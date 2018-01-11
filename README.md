@@ -12,17 +12,24 @@ Some things we'll watch out for are:
 
 
 __STEPS__  
+
 1. Fork your own copy of this repository by either:   
+
     * Public - Fork a copy into your own public github account   
     * Private - Fork a copy onto your local machine (Download the repository), or onto a private repository if you can.
+
+
 2. Read the description of the project below.
-3. Commit updated code to your repository.  
+
+3. Commit updated code to your repository.
+
 4. Once complete.
     * Public - Email the link to your repository to [ron.crawford@critonapps.com](mailto:ron.crawford@critonapps.com?subject=Developer Code Challenge Completed)  
     * Private - Zip your code into a single file and email it to [ron.crawford@critonapps.com](mailto:ron.crawford@critonapps.com?subject=Developer ChessProject Completed)
 
 
 __DESCRIPTION__
+
 Pretend that you are joining a team that has just started writing code and may be doing it wrong. Your goal in the long run is to build a chess game and you need to pick up what other developers have already done. You won’t be writing it all at once and the first iteration will be focused on some basic functionality of the Chessboard and some simple movements of the pawns.
 
 The chessboard will be a grid of width X and height Y, being (0, 0) the lower left-hand corner, and (X, Y) the top right-hand corner.

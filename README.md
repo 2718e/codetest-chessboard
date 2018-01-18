@@ -43,5 +43,6 @@ Pieces can have two different types of movement: move and capture (we will ignor
 
 We'd like you to get all the unit tests passing. As you'll be in the project for a long time, we'd like you to also think about how you'd implement this, what other tests might be necessary and what you'd do to aid future development of other features.
 
+Whether you want to implement your ideas or roughly explain them in written, is entirely up to you and the time you want to spend on the test. The most important thing is that you put yourself in the place of taking over this project and seeing it through to completion. Be ready to discuss these with us in your face to face interview.
 
 __Any questions please get in touch with Ron at [ron.crawford@critonapps.com](mailto:ron.crawford@critonapps.com?subject=Questions regarding Developer Code Challenge)__

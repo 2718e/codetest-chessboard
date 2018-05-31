@@ -37,3 +37,7 @@ More thought
 ...
 
 is the check for limiting number of pawns method correct - this test can pass even though there is nothing in the code to limit how many pawns
+
+Looking at it further it seems that the pawns would fail to be added because using count as a coordinate means it is out of bounds, but the name of the test suggests that the code should check there are not more than 8 pawns.
+
+...

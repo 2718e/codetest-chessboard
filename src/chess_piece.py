@@ -52,6 +52,7 @@ class ChessPiece(ABC):
     def piece_name_long(self):
         pass
 
+    # not used yet, plan is to give each piece a 1-letter abbreviation so could make an ascii representation of the board (with a colored console at least)
     @abstractclassmethod
     def piece_name_short(self):
         pass

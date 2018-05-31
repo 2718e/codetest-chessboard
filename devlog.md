@@ -33,3 +33,7 @@ More thought
 - SHould the move validator check if the move fails to get the player out of check
 
 (this all might be out of scope for the exercise though...)
+
+...
+
+is the check for limiting number of pawns method correct - this test can pass even though there is nothing in the code to limit how many pawns

@@ -6,7 +6,7 @@ class ChessBoard:
         # will be indexed as self.pieces[row][column]
         self.pieces = [[None] * self.MAX_BOARD_WIDTH for _ in range(self.MAX_BOARD_HEIGHT)]
 
-    def add(self, piece, x_coordinate, y_coordinate, piece_color):
+    def add(self, piece, x_coordinate, y_coordinate):
         if (y_coordinate < len(self.pieces) and 
         x_coordinate < len(self.pieces[y_coordinate]) and 
         self.pieces[y_coordinate][x_coordinate] == None):

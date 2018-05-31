@@ -1,46 +1,24 @@
-class Pawn:
+from src.chess_piece import ChessPiece
+from src.movement_type import MovementType
+from src.piece_color import PieceColor
+
+class Pawn(ChessPiece):
     def __init__(self, piece_color):
-        self._piece_color = piece_color
-        self._chess_board = None
-        self._x_coordinate = None
-        self._y_coordinate = None
+        super().__init__(piece_color)
 
-    @property
-    def chess_board(self):
-        return self._chess_board
+    def check_move_is_allowed(self, movement_type, new_x, new_y):
+        if (movement_type == MovementType.MOVE):
+            if (self.piece_color == PieceColor.BLACK):
+                return self.y_coordinate - new_y == 1 and self.x_coordinate == new_x
+            else: # White Pawns move in the opposite direction
+                return new_y - self.y_coordinate == 1 and self.x_coordinate == new_x
+        else:
+            raise NotImplementedError() # the spec for the coding challenge says not to implement capture
 
-    @chess_board.setter
-    def chess_board(self, value):
-        self._chess_board = value
+    @classmethod
+    def piece_name_long(self):
+        return "Pawn"
 
-    @property
-    def x_coordinate(self):
-        return self._x_coordinate
-
-    @x_coordinate.setter
-    def x_coordinate(self, value):
-        self._x_coordinate = value
-
-    @property
-    def y_coordinate(self):
-        return self._y_coordinate
-
-    @y_coordinate.setter
-    def y_coordinate(self, value):
-        self._y_coordinate = value
-
-    @property
-    def piece_color(self):
-        return self._piece_color
-
-    @piece_color.setter
-    def piece_color(self, value):
-        self.piece_color = value
-
-    def move(self, movement_type, new_x, new_y):
-        raise NotImplementedError()
-
-    def __unicode__(self):
-        return 'Current X: {}\nCurrent Y: {}\nPiece Color: {}'.format(
-            self.x_coordinate, self.y_coordinate, self.piece_color
-        )
+    @classmethod
+    def piece_name_short(self):
+        return "P"
